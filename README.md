@@ -1,21 +1,40 @@
-# IoT-Enabled Packaging Activity Recognition (OpenPack)
-**Data Analytics Course - Master in IoT**
+IoT-Enabled Packaging Activity Recognition (OpenPack)
 
-## Project Overview
-This project implements an analytical solution to automate the recognition of packaging activities in industrial logistics. [cite_start]Using the **OpenPack dataset**, we develop a predictive model that processes data from IoT multimodal sensors (IMU) to reduce human errors and improve traceability in Industry 4.0 environments[cite: 108, 110].
+Course: Data Analytics (203018207) - Master in IoT 
 
-## Problem Statement
-[cite_start]Manual packaging tasks often lack real-time monitoring, leading to productivity issues and operational costs[cite: 147, 150]. [cite_start]This project uses AI to bridge that gap[cite: 154].
+Project Overview
+This project implements an analytical solution to automate the recognition of packaging activities in industrial logistics. Using the OpenPack dataset (Kitamura et al., 2022), we developed a predictive model that processes data from IoT multimodal sensors (IMU) to improve traceability in Industry 4.0 environments.
 
-## Authors (Group 2)
-* [cite_start]**Carlos Andres Gutierrez** - ML Engineer [cite: 81, 180]
-* [cite_start]**Lucero Chamorro Serna** - Data Engineer [cite: 82, 179]
 
-## Technologies Used
-* **Language:** Python
-* [cite_start]**Environment:** Google Colab / Jupyter Notebook [cite: 42]
-* [cite_start]**Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib [cite: 33]
-* [cite_start]**Data Source:** [OpenPack Dataset (Zenodo)](https://zenodo.org/record/7416043) [cite: 143]
+Problem Statement & Articulation
+Manual packaging tasks often lack real-time monitoring, leading to productivity issues. This project addresses the problem by creating a post-processing algorithm that transforms raw sensor signals into actionable operational insights.
+Technical Justification: We utilize a Random Forest classifier to manage the high-dimensional and non-linear nature of human movement data captured by IoT devices, ensuring robust activity recognition.
 
-## How to use
-The main analysis is located in the `.ipynb` file. This notebook contains the data preprocessing, model training, and performance evaluation.
+
+Authors (Group 2)
+Carlos Andres Gutierrez - ML Engineer 
+Lucero Chamorro Serna - Data Engineer 
+
+
+Technologies Used
+
+Language: Python 
+Environment: Google Colab / Jupyter Notebook 
+Libraries: Pandas, NumPy, Scikit-learn, Matplotlib, Joblib 
+Data Source: OpenPack Dataset (Kitamura et al., 2022) 
+
+Methodology Implemented
+
+Data Acquisition: Loading 102 industrial sessions from IoT-IMU sensors.
+Preprocessing: Data cleaning, handling missing values, and StandardScaler normalization.
+
+
+Modeling: Implementation of a Random Forest algorithm for predictive modeling.
+Evaluation: Performance assessment using Confusion Matrix and Accuracy metrics.
+
+
+How to use
+Clone this repository.
+Open the .ipynb file in Google Colab.
+Ensure the OpenPack CSV files are available in your Google Drive path.
+Run all cells to reproduce the preprocessing, training, and evaluation
